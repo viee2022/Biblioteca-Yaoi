@@ -1,4 +1,5 @@
-const biblioteca = [];
+let biblioteca =
+JSON.parse(localStorage.getItem("biblioteca")) || [];
 
 const lista = document.getElementById("biblioteca");
 

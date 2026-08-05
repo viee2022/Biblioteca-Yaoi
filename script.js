@@ -5,11 +5,16 @@ const lista = document.getElementById("biblioteca");
 
 function atualizarBiblioteca(){
 
+localStorage.setItem(
+"biblioteca",
+JSON.stringify(biblioteca)
+);
+
 lista.innerHTML="";
 
-biblioteca.forEach((manga)=>{
+biblioteca.forEach((manga,index)=>{
 
-lista.innerHTML += `
+lista.innerHTML+=`
 
 <div class="manga">
 
@@ -17,7 +22,9 @@ lista.innerHTML += `
 
 <h3>${manga.nome}</h3>
 
-<p>Capítulo ${manga.atual}/${manga.total}</p>
+<p>📖 ${manga.atual}/${manga.total}</p>
+
+<p>🔵 ${manga.status}</p>
 
 <button onclick="window.open('${manga.link}')">
 

@@ -62,8 +62,10 @@ capa:"https://placehold.co/300x420"
 
 atualizarBiblioteca();
 
-document.getElementById("novo").onclick = ()=>{
+const modal = document.getElementById("modal");
 
-alert("Na próxima etapa vamos abrir uma tela para cadastrar mangás.");
+document.getElementById("novo").onclick=()=>{
+
+modal.style.display="flex";
 
 }

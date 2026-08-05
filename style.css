@@ -213,3 +213,59 @@ background:#2b2538;
 color:white;
 
     }
+
+.pagina-manga{
+
+display:none;
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+background:#14121b;
+
+overflow:auto;
+
+padding:25px;
+
+z-index:999;
+
+}
+
+#voltar{
+
+width:150px;
+
+margin-bottom:25px;
+
+}
+
+#conteudoManga img{
+
+width:220px;
+
+border-radius:18px;
+
+margin-bottom:20px;
+
+}
+
+#conteudoManga h1{
+
+margin-bottom:15px;
+
+}
+
+#conteudoManga p{
+
+margin:10px 0;
+
+font-size:18px;
+
+    }

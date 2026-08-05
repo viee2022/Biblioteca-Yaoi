@@ -1,16 +1,144 @@
-index.html
 <!DOCTYPE html>
-<html lang='pt-BR'>
+<html lang="pt-BR">
 <head>
-<meta charset='UTF-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Minha Biblioteca Yaoi</title>
-<link rel='stylesheet' href='style.css'>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-<h1>Minha Biblioteca Yaoi</h1>
-<input placeholder='Pesquisar mangá...'>
-<div id='biblioteca'></div>
-<script src='script.js'></script>
+
+<header>
+
+<div class="logo">
+
+💜 Minha Biblioteca Yaoi
+
+</div>
+
+<input
+type="text"
+placeholder="Pesquisar mangá..."
+id="pesquisa">
+
+</header>
+
+<section class="banner">
+
+<div>
+
+<h1>Bem-vinda de volta!</h1>
+
+<p>
+Organize todos os seus mangás favoritos em um único lugar.
+</p>
+
+</div>
+
+</section>
+
+<section class="estatisticas">
+
+<div class="card">
+
+<h2>58</h2>
+
+<p>Mangás</p>
+
+</div>
+
+<div class="card">
+
+<h2>23</h2>
+
+<p>Lendo</p>
+
+</div>
+
+<div class="card">
+
+<h2>15</h2>
+
+<p>Concluídos</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="titulo">
+
+📖 Continuar lendo
+
+</h2>
+
+<div class="mangas">
+
+<div class="manga">
+
+<img src="https://placehold.co/300x420">
+
+<h3>Love is an Illusion</h3>
+
+<p>Capítulo 87 / 120</p>
+
+<button>Ler agora</button>
+
+</div>
+
+<div class="manga">
+
+<img src="https://placehold.co/300x420">
+
+<h3>Jinx</h3>
+
+<p>Capítulo 73</p>
+
+<button>Ler agora</button>
+
+</div>
+
+<div class="manga">
+
+<img src="https://placehold.co/300x420">
+
+<h3>Pearl Boy</h3>
+
+<p>Capítulo 92</p>
+
+<button>Ler agora</button>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="titulo">
+
+📚 Todos os Mangás
+
+</h2>
+
+<div id="biblioteca">
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
 </body>
 </html>

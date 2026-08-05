@@ -20,7 +20,7 @@ biblioteca.forEach((manga,index)=>{
 
 lista.innerHTML+=`
 
-<div class="manga">
+<div class="manga" onclick="abrirManga(${index})">
 
 <img src="${manga.capa}">
 

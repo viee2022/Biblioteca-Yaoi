@@ -69,3 +69,35 @@ document.getElementById("novo").onclick=()=>{
 modal.style.display="flex";
 
 }
+
+document.getElementById("salvar").onclick = ()=>{
+
+const manga={
+
+nome:document.getElementById("nome").value,
+
+capa:document.getElementById("capa").value || "https://placehold.co/300x420",
+
+link:document.getElementById("link").value,
+
+atual:Number(document.getElementById("capAtual").value),
+
+total:Number(document.getElementById("capTotal").value),
+
+status:document.getElementById("status").value
+
+};
+
+biblioteca.push(manga);
+
+atualizarBiblioteca();
+
+modal.style.display="none";
+
+document.getElementById("nome").value="";
+document.getElementById("capa").value="";
+document.getElementById("link").value="";
+document.getElementById("capAtual").value="";
+document.getElementById("capTotal").value="";
+
+}

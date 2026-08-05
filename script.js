@@ -40,34 +40,6 @@ Ler Agora
 
 }
 
-biblioteca.push({
-
-nome:"Love is an Illusion",
-
-atual:87,
-
-total:120,
-
-link:"https://google.com",
-
-capa:"https://placehold.co/300x420"
-
-});
-
-biblioteca.push({
-
-nome:"Jinx",
-
-atual:73,
-
-total:"...",
-
-link:"https://google.com",
-
-capa:"https://placehold.co/300x420"
-
-});
-
 atualizarBiblioteca();
 
 const modal = document.getElementById("modal");

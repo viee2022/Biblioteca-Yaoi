@@ -61,3 +61,9 @@ capa:"https://placehold.co/300x420"
 });
 
 atualizarBiblioteca();
+
+document.getElementById("novo").onclick = ()=>{
+
+alert("Na próxima etapa vamos abrir uma tela para cadastrar mangás.");
+
+}

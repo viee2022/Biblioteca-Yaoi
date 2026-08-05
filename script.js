@@ -22,24 +22,34 @@ lista.innerHTML+=`
 
 <div class="manga" onclick="abrirManga(${index})">
 
-<img src="${manga.capa}">
+<img src="${manga.capa}" alt="${manga.nome}">
+
+<div class="info">
 
 <h3>${manga.nome}</h3>
 
-<p>📖 ${manga.atual}/${manga.total}</p>
+<p class="status">${manga.status}</p>
 
-<p>🔵 ${manga.status}</p>
+<div class="progresso">
 
-<button onclick="window.open('${manga.link}')">
+<div class="barra"
+style="width:${manga.total > 0 ? (manga.atual/manga.total)*100 : 0}%">
+</div>
 
-Ler Agora
+</div>
 
-</button>
+<p>
+
+Capítulo ${manga.atual} de ${manga.total}
+
+</p>
+
+</div>
 
 </div>
 
 `;
-
+  
 });
 
 }

@@ -85,3 +85,45 @@ document.getElementById("capAtual").value="";
 document.getElementById("capTotal").value="";
 
 }
+
+function abrirManga(index){
+
+const manga=biblioteca[index];
+
+conteudo.innerHTML=`
+
+<img src="${manga.capa}">
+
+<h1>${manga.nome}</h1>
+
+<p>
+
+📖 ${manga.atual}/${manga.total}
+
+</p>
+
+<p>
+
+📚 Status:
+
+${manga.status}
+
+</p>
+
+<button onclick="window.open('${manga.link}')">
+
+📖 Ler Agora
+
+</button>
+
+`;
+
+pagina.style.display="block";
+
+}
+
+document.getElementById("voltar").onclick=()=>{
+
+pagina.style.display="none";
+
+}

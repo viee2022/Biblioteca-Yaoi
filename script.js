@@ -3,6 +3,10 @@ JSON.parse(localStorage.getItem("biblioteca")) || [];
 
 const lista = document.getElementById("biblioteca");
 
+const pagina=document.getElementById("paginaManga");
+
+const conteudo=document.getElementById("conteudoManga");
+
 function atualizarBiblioteca(){
 
 localStorage.setItem(

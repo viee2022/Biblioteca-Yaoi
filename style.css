@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#14121b;
+    color:white;
+    font-family:'Poppins',sans-serif;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+    background:#1d1a28;
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:700;
+    color:#d7a9ff;
+}
+
+#pesquisa{
+    width:45%;
+    max-width:350px;
+    padding:12px;
+    border:none;
+    border-radius:12px;
+    background:#2a2538;
+    color:white;
+    outline:none;
+}
+
+.banner{
+    margin:25px;
+    background:linear-gradient(135deg,#6f42c1,#8e5eff);
+    border-radius:20px;
+    padding:35px;
+}
+
+.banner h1{
+    font-size:34px;
+    margin-bottom:10px;
+}
+
+.banner p{
+    opacity:.9;
+}
+
+.estatisticas{
+    display:flex;
+    gap:20px;
+    padding:25px;
+    flex-wrap:wrap;
+}
+
+.card{
+    flex:1;
+    min-width:120px;
+    background:#211d2f;
+    border-radius:18px;
+    padding:25px;
+    text-align:center;
+}
+
+.card h2{
+    color:#c78fff;
+    font-size:32px;
+}
+
+.titulo{
+    margin:25px;
+}
+
+.mangas{
+    display:flex;
+    gap:20px;
+    overflow-x:auto;
+    padding:0 25px 25px;
+}
+
+.manga{
+    min-width:200px;
+    background:#211d2f;
+    border-radius:18px;
+    padding:15px;
+}
+
+.manga img{
+    width:100%;
+    border-radius:12px;
+}
+
+.manga h3{
+    margin-top:10px;
+}
+
+.manga p{
+    margin:8px 0;
+    color:#c8c8c8;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:12px;
+    background:#8e5eff;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+#biblioteca{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(180px,1fr));
+    gap:20px;
+    padding:25px;
+}

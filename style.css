@@ -101,6 +101,12 @@ header{
     border-radius:12px;
 }
 
+.manga:hover{
+
+    transform:translateY(-5px);
+
+}
+
 .manga h3{
     margin-top:10px;
 }

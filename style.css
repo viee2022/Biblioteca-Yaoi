@@ -334,3 +334,29 @@ border-radius:30px;
 transition:.4s;
 
 }
+
+@media (max-width:700px){
+
+header{
+
+flex-direction:column;
+
+gap:15px;
+
+}
+
+#pesquisa{
+
+width:100%;
+
+max-width:none;
+
+}
+
+.estatisticas{
+
+flex-direction:column;
+
+}
+
+    }

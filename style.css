@@ -86,11 +86,15 @@ header{
 }
 
 .manga{
+
     min-width:200px;
     background:#211d2f;
     border-radius:18px;
     padding:15px;
-}
+    cursor:pointer;
+    transition:0.3s;
+
+    }
 
 .manga img{
     width:100%;
